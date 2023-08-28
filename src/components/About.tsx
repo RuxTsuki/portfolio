@@ -1,8 +1,10 @@
+'use client'
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motions';
 import { styles } from '@/utils/style';
 import { CondingSkills } from '@/components/CondingSkills';
 import { SectionWrapper } from '@/components/hoc';
+
 
 export const About = () => {
   return (
