@@ -1,12 +1,21 @@
-import { About } from '@/components/About';
+import { AboutMotion } from '@/components/sections/About';
+import { ExperienceMotion } from '@/components/sections/Experience';
+import { Hero } from '@/components/sections/Hero';
+import { TechMotion } from '@/components/sections/Tech';
+import { WorksMotion } from '@/components/sections/Works';
 
 export default function Home() {
   return (
     <div className='relative z-0 bg-primary'>
+      <Hero />
 
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <About />
+      <main>
+        <AboutMotion />
+        <TechMotion />
       </main>
+
+      <ExperienceMotion />
+      <WorksMotion />
     </div>
   )
 }

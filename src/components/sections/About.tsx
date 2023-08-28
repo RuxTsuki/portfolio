@@ -1,12 +1,12 @@
 'use client'
 import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motions';
+import { fadeIn } from '../../utils/motions';
 import { styles } from '@/utils/style';
 import { CondingSkills } from '@/components/CondingSkills';
 import { SectionWrapper } from '@/components/hoc';
 
 
-export const About = () => {
+const About = () => {
   return (
     <>
       <motion.div className='pt-32'>
@@ -29,7 +29,7 @@ export const About = () => {
           </p>
         </div>
 
-        <div className='flex justify-center lg:justify-end '>
+        <div className='flex justify-center'>
           <CondingSkills className='coding-skills-man' />
         </div>
       </motion.div>

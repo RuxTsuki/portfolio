@@ -1,8 +1,8 @@
 'use client';
+
 import { staggerContainer } from '@/utils/motions';
 import { styles } from '@/utils/style';
 import { motion } from 'framer-motion';
-
 
 export const SectionWrapper = (Component: any, idName: any) => {
     return function HOC() {
