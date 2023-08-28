@@ -1,8 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Poppins(
+  {
+    weight: ['300', '400', '500', '600', '700', '900'],
+    subsets: ['latin']
+  }
+)
 
 export const metadata: Metadata = {
   title: 'Portfolio - Diego Bello | TsukiiYamero',
@@ -13,6 +18,11 @@ export const metadata: Metadata = {
   applicationName: 'Portfolio TsukiiYamero',
   authors: { 'name': 'Diego Alexander Bello' },
   //meta ogg
+  metadataBase: new URL('https://ruxtsuki.xyz/'),
+  referrer: 'origin-when-cross-origin',
+  keywords: ['portfolio', 'front-end developer', 'portafolio', 'Diego Alexander Bello', 'diego alexander guatibonza bello', 'Tsukii', 'TsukiiYamero', 'TsukiYamero', 'tsuki', 'tsukiiyamero'],
+  colorScheme: 'dark',
+  generator: 'Next.js',
   twitter: {
     title: 'Portfolio - Diego Bello | TsukiiYamero',
     description: 'Explore my journey and projects in the world of technology. Discover my skills, knowledge, and accomplishments through a variety of projects, experiences, and how I have applied my abilities in the workplace and creative endeavors.',
@@ -22,7 +32,6 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'en_US',
     url: 'https://ruxtsuki.xyz/',
     alternateLocale: 'es_ES',
     title: 'Portfolio - Diego Bello | TsukiiYamero',
