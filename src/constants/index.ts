@@ -155,3 +155,5 @@ export const idProjects = 'projects';
 export const idExperiences = 'experiences';
 
 export const idTechSkills = 'techSkills';
+
+export const splashViewed = 'splashViewed';
