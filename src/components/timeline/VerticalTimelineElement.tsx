@@ -1,5 +1,3 @@
-
-import Image from 'next/image';
 import './vertical-line-element.css';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/motions';
