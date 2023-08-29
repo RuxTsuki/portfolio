@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --main-color: #ff4ecd;
+  --font-size-text-m: 16px;
+  --font-size-text-d: 1.25rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,7 +33,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #915eff 1.9%, #ff4ecd 97.5%);
   border-radius: 12px;
 }
 
@@ -75,8 +79,12 @@
 .violet-gradient {
   background: #804dee;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(-90deg,
-      #804dee 0%,
+  background: -webkit-linear-gradient(-90.13deg, #915eff 10%, #ff4ecd 40.5%,
+      rgba(60, 51, 80, 0) 100%);
+}
+
+.fuxia-gradient {
+  background: -webkit-linear-gradient(-90.13deg, #915eff 1.9%, #ff4ecd 97.5%,
       rgba(60, 51, 80, 0) 100%);
 }
 

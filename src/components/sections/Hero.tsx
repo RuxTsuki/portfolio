@@ -1,7 +1,7 @@
 'use client'
 
 import { styles } from '@/utils/style';
-import { Text } from '@/components/text/Text';
+import { Text } from '@/components/ui/text/Text';
 import { Link } from '@nextui-org/react';
 import { motion } from 'framer-motion';
 
@@ -18,7 +18,7 @@ export const Hero = () => {
 
                 <div>
                     <Text type='SuperTitle'>
-                        Hola, soy <span className='text-[#915eff]'>Diego</span> 👋
+                        Hola, soy <span className='text-[#ff4ecd]'>Diego</span> 👋
                     </Text>
 
                     <p className={`${styles.heroSubText} mt-6 text-white-100`}>

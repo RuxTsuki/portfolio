@@ -5,8 +5,8 @@ import { motion } from 'framer-motion'
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '@/utils/motions';
 import { styles } from '@/utils/style';
-import { VerticalTimeLine, VerticalTimelineElement } from '@/components/timeline'
-import { experiences } from '@/constants';
+import { VerticalTimeLine, VerticalTimelineElement } from '@/components/ui/timeline'
+import { experiences, idExperiences } from '@/constants';
 import Image from 'next/image';
 
 const ExperienceCard = ({ experience, index }: { experience: any, index: number }) => {
@@ -77,5 +77,5 @@ const Experience = () => {
   )
 }
 
-export const ExperienceMotion = SectionWrapper(Experience, 'exp');
+export const ExperienceMotion = SectionWrapper(Experience, idExperiences);
 

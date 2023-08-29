@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
-import { techSkills } from '@/constants';
+import { idTechSkills, techSkills } from '@/constants';
 import { styles } from '@/utils/style';
-import { CommonCard } from '../CommonCard';
+import { CommonCard } from '../ui/card/CommonCard';
 
 const Tech = () => {
   return (
@@ -30,4 +30,4 @@ const Tech = () => {
 }
 
 
-export const TechMotion = SectionWrapper(Tech, 'tech');
+export const TechMotion = SectionWrapper(Tech, idTechSkills);

@@ -143,3 +143,15 @@ const projects = [
 ];
 
 export { techSkills, experiences, projects };
+
+export const basePath = '/';
+
+export const idHero = 'hero';
+
+export const idAbout = 'about';
+
+export const idProjects = 'projects';
+
+export const idExperiences = 'experiences';
+
+export const idTechSkills = 'techSkills';
