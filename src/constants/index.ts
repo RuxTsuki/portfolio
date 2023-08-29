@@ -82,6 +82,19 @@ const experiences = [
       "Consumo de Apis en Rest y Graphql",
       "Identificar y dar solución a los problemas asegurando la calidad del código y las buenas prácticas.",
     ],
+  },
+  {
+    title: "Frontend Developer Junior",
+    company_name: "Salomon Software 2",
+    icon: ImageSalomon,
+    iconBg: "#383E56",
+    date: "Jul 2019 - May 2022",
+    points: [
+      "Participación en el diseño de nuevas funcionalidades.",
+      "Estructuración de componentes reutilizables en angular.",
+      "Consumo de Apis en Rest y Graphql",
+      "Identificar y dar solución a los problemas asegurando la calidad del código y las buenas prácticas.",
+    ],
   }
 ];
 
