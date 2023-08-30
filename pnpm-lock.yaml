@@ -11,6 +11,9 @@ dependencies:
   '@nextui-org/react':
     specifier: ^2.1.7
     version: 2.1.7(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.3)
+  '@rive-app/react-canvas':
+    specifier: ^4.1.6
+    version: 4.1.6(react@18.2.0)
   '@types/node':
     specifier: 20.5.6
     version: 20.5.6
@@ -3286,6 +3289,19 @@ packages:
     dependencies:
       '@react-types/overlays': 3.8.1(react@18.2.0)
       '@react-types/shared': 3.19.0(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@rive-app/canvas@2.2.2:
+    resolution: {integrity: sha512-F1J4tDfFPUehvznveMdInMIWKvY1HjGZcOenMztWfJBCMZDammfqVz695Y2jaku+XFE2f0g6R8X2EcqozaFwwg==}
+    dev: false
+
+  /@rive-app/react-canvas@4.1.6(react@18.2.0):
+    resolution: {integrity: sha512-y7jrXU7RYQbpl0mWVX05zbAwNoik8tL5Lon7N+MMqgAedsLPF1rqpSPkZSK7M9q1aLgbhoCsAygMUiPenw4aBw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@rive-app/canvas': 2.2.2
       react: 18.2.0
     dev: false
 

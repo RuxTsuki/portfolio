@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { SectionWrapper } from "../hoc"
 import { fadeIn, textVariant } from "@/utils/motions";
 import { styles } from "@/utils/style";
-import { projects } from "@/constants";
+import { idProjects, projects } from "@/constants";
 import github from "@/assets/svg/github.svg";
 
 const ProjectCard = ({ index, project }: { index: number, project: any }) => {
@@ -60,14 +60,14 @@ export const Works = () => {
   return (
     <>
       <motion.div variants={textVariant('')}>
-        <p className={`${styles.sectionSubText}`}>Trabajos personal</p>
+        <p className={`${styles.sectionSubText}`}>Trabajos personales</p>
         <h2 className={`${styles.sectionHeadText}`}>Proyectos 👨‍💻</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 0.1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[1rem] max-w-3xl leading-[30px] lg:text-[1.25rem]"
         >
           Cada proyecto que realizo es unico y especial, es una oportunidad para crear y aprender de cada nuevo reto que se me presenta.
           Me apasion empezar con una idea en blanco y convertirla en una solucion a las necesidades de los usuarios
@@ -89,6 +89,6 @@ export const Works = () => {
   )
 }
 
-export const WorksMotion = SectionWrapper(Works, 'projects')
+export const WorksMotion = SectionWrapper(Works, idProjects)
 
 

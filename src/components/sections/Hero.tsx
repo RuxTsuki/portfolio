@@ -1,14 +1,17 @@
 'use client'
 
 import { styles } from '@/utils/style';
-import { Text } from '@/components/text/Text';
+import { Text } from '@/components/ui/text/Text';
 import { Link } from '@nextui-org/react';
 import { motion } from 'framer-motion';
+import { HeroAnimation } from './HeroAnimation';
+import { Suspense } from 'react';
+
 
 export const Hero = () => {
 
     return (
-        <section className='relative w-full h-screen mx-auto'>
+        <section className='relative w-full h-screen mx-auto grid'>
             <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
 
                 <div className='flex flex-col justify-center items-center mt-5'>
@@ -18,7 +21,7 @@ export const Hero = () => {
 
                 <div>
                     <Text type='SuperTitle'>
-                        Hola, soy <span className='text-[#915eff]'>Diego</span> 👋
+                        Hola, soy <span className='text-[#ff4ecd]'>Diego</span> 👋
                     </Text>
 
                     <p className={`${styles.heroSubText} mt-6 text-white-100`}>
@@ -30,9 +33,11 @@ export const Hero = () => {
 
             </div>
 
-            <>
-                other image
-            </>
+            <div className='relative z-[5] self-center justify-self-center mt-[6rem] md:mt-[12rem]  w-[380px] h-[380px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] xl:w-[800px] xl:h-[800px]'>
+                <Suspense fallback={<p className='text-white text-[1.5rem]'>Loading...</p>}>
+                    <HeroAnimation />
+                </Suspense>
+            </div>
 
             <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
                 <Link href="#about">

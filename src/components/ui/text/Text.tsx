@@ -21,11 +21,11 @@ export const Text = ({ children, className, type }: Props) => {
                 {children}
             </h2>
         case 'SubTitle':
-            return <p className={`${className} sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider`}>
+            return <p className={`${className} sm:text-[1rem] text-[14px] text-secondary uppercase tracking-wider lg:text-[1.25rem]`}>
                 {children}
             </p>
         case 'Text':
-            return <p className={`${className} text-secondary text-[18px] leading-[30px] lg:p-3`}>
+            return <p className={`${className} text-secondary text-[1rem] leading-[30px] lg:p-3 lg:text-[1.25rem]`}>
                 {children}</p>
     }
 }

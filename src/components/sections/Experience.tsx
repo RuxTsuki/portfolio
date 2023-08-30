@@ -5,13 +5,13 @@ import { motion } from 'framer-motion'
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '@/utils/motions';
 import { styles } from '@/utils/style';
-import { VerticalTimeLine, VerticalTimelineElement } from '@/components/timeline'
-import { experiences } from '@/constants';
+import { VerticalTimeLine, VerticalTimelineElement } from '@/components/ui/timeline'
+import { experiences, idExperiences } from '@/constants';
 import Image from 'next/image';
 
-const ExperienceCard = ({ experience }: any) => {
+const ExperienceCard = ({ experience, index }: { experience: any, index: number }) => {
   return (
-    <VerticalTimelineElement contentStyle={{ background: '#1d1836', color: '#fff' }}
+    <VerticalTimelineElement index={index} contentStyle={{ background: '#1d1836', color: '#fff' }}
       contentArrowStyle={{ borderRight: '7px solid #232631' }}
       date={experience.date}
       iconStyle={{ background: experience.icon }}
@@ -68,7 +68,7 @@ const Experience = () => {
         <VerticalTimeLine>
           {
             experiences.map((experience, index) => (
-              <ExperienceCard key={index} experience={experience}></ExperienceCard>
+              <ExperienceCard key={index} index={index} experience={experience}></ExperienceCard>
             ))
           }
         </VerticalTimeLine>
@@ -77,5 +77,5 @@ const Experience = () => {
   )
 }
 
-export const ExperienceMotion = SectionWrapper(Experience, 'exp');
+export const ExperienceMotion = SectionWrapper(Experience, idExperiences);
 

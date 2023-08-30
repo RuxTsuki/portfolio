@@ -1,6 +1,6 @@
 'use client'
 
-import { fadeIn } from "../utils/motions"
+import { fadeIn } from "../../../utils/motions"
 import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
 import { VerifiedSvg } from "@/components/icons/VerifiedSvg";

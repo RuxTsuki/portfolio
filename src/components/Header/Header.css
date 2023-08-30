@@ -1,0 +1,28 @@
+.navbar-bg {
+    background: hsla(0, 0%, 0%, 0.784);
+    box-shadow: 0 8px 22px 0 rgba(31, 38, 135, .37);
+    backdrop-filter: blur(4px);
+}
+
+.animated {
+    animation: fadeInLeft ease .4s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.font-menu-d li p {
+    font-size: clamp(1rem, 1.55vw, 1.5rem);
+    cursor: pointer;
+    padding-inline: clamp(.4rem, 0.5vw, .8rem);
+    color: white;
+}
