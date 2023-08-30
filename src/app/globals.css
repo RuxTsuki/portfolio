@@ -54,6 +54,10 @@
 }
 
 
+.bg-degrade-main {
+  border: 1px solid var(--main-color);
+}
+
 .card {
   font-size: 3.25rem;
   opacity: 0.93;
