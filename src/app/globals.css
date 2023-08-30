@@ -26,6 +26,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   color-scheme: dark;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::-webkit-scrollbar {
@@ -52,7 +53,6 @@
     height: 400px;
   }
 }
-
 
 .bg-degrade-main {
   border: 1px solid var(--main-color);
