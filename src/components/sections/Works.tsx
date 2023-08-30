@@ -60,7 +60,7 @@ export const Works = () => {
   return (
     <>
       <motion.div variants={textVariant('')}>
-        <p className={`${styles.sectionSubText}`}>Trabajos personal</p>
+        <p className={`${styles.sectionSubText}`}>Trabajos personales</p>
         <h2 className={`${styles.sectionHeadText}`}>Proyectos 👨‍💻</h2>
       </motion.div>
 
