@@ -21,19 +21,19 @@ export const Hero = () => {
 
                 <div>
                     <Text type='SuperTitle'>
-                        Hola, soy <span className='text-[#ff4ecd]'>Diego</span> 👋
+                        Hola, soy <span className='text-[#ff4ecd]'>Diego Bello</span> 👋
                     </Text>
 
-                    <p className={`${styles.heroSubText} mt-6 text-white-100`}>
-                        Desarrollador Frontend,
+                    <p className={`text-[#dfd9ff] lg:text-[1.5rem] font-medium md:text-[26px] text-[1.125rem] lg:leading-[40px] mt-6`}>
+                        Front-end Developer,
                         <br className='sm:block hidden' />
-                        Amo crear interfaces & aplicaciones web.
+                        Amo crear interfaces & aplicaciones web impactantes.
                     </p>
                 </div>
 
             </div>
 
-            <div className='relative z-[5] self-center justify-self-center mt-[10rem] md:mt-[12rem] lg:mt-[14rem] w-[378px] h-[260px] md:w-[600px] md:h-[400px] lg:w-[700px] lg:h-[400px] xl:w-[800px] xl:h-[400px]'>
+            <div className='relative z-[5] self-center justify-self-center mt-[10rem] md:mt-[20rem] lg:mt-[16rem] w-[378px] h-[260px] md:w-[600px] md:h-[350px] lg:w-[700px] lg:h-[400px] xl:w-[800px] xl:h-[400px]'>
                 <Suspense fallback={<p className='text-white text-[1.5rem]'>Loading...</p>}>
                     <HeroAnimation />
                 </Suspense>
