@@ -8,6 +8,7 @@ import TsukiiLogo from '@/assets/svg/tsukiilogo.svg';
 import CloseSvg from '@/assets/svg/close.svg';
 import MenuSvg from '@/assets/svg/menu.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Header = ({ needBg = false }) => {
     const [navbar, setNavbar] = useState(false);
@@ -72,9 +73,9 @@ export const Header = ({ needBg = false }) => {
                     <div className={`${sticky && !navbar ? 'navbar-bg ' : ''} relative z-20 `}>
                         <div className={`w-full ${needBg && !navbar ? 'bg-black' : ''}`}>
                             <div className="container mx-auto flex items-center justify-between py-3 px-3 md:py-4">
-                                <a className='cursor-pointer' onClick={() => goToSection(itemsMenu[0].id)}>
+                                <Link className='cursor-pointer' href={`${basePath}/#${itemsMenu[0].id}`}>
                                     <Image priority width={60} height={60} src={TsukiiLogo} alt="logo of Tsukii" />
-                                </a>
+                                </Link>
 
                                 <div className='hidden md:flex'>
                                     <ul className="font-menu-d font-medium flex gap-[1.25rem]">

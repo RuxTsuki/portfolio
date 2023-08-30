@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   keywords: ['portfolio', 'front-end developer', 'portafolio', 'Diego Alexander Bello', 'diego alexander guatibonza bello', 'Tsukii', 'TsukiiYamero', 'TsukiYamero', 'tsuki', 'tsukiiyamero'],
   colorScheme: 'dark',
   generator: 'Next.js',
+  robots: 'index, follow',
   twitter: {
     title: 'Portfolio - Diego Bello | TsukiiYamero',
     description: 'Explore my journey and projects in the world of technology. Discover my skills, knowledge, and accomplishments through a variety of projects, experiences, and how I have applied my abilities in the workplace and creative endeavors.',
