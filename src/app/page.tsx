@@ -21,6 +21,16 @@ export default function Home() {
 
       <ExperienceMotion />
       <WorksMotion />
+
+      <p className='text-[#000] text-[.875rem]'>
+        Diego Bello
+      </p>
+      <p className='text-[#000] text-[.875rem]'>
+        Diego Alexander Bello
+      </p>
+      <p className='text-[#000] text-[.875rem]'>
+        Diego Alexander Guatibonza Bello
+      </p>
     </div>
   )
 }

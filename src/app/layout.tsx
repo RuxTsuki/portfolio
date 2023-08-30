@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   //meta ogg
   metadataBase: new URL('https://ruxtsuki.xyz/'),
   referrer: 'origin-when-cross-origin',
-  keywords: ['portfolio', 'front-end developer', 'portafolio', 'Diego Alexander Bello', 'diego alexander guatibonza bello', 'Tsukii', 'TsukiiYamero', 'TsukiYamero', 'tsuki', 'tsukiiyamero'],
+  keywords: ['Portfolio Diego Bello', 'Front-end Developer Diego Bello', 'Portafolio Diego Bello', 'Diego Bello Dev', 'Diego Alexander Bello', 'Ddiego Alexander Guatibonza Bello', 'Tsukii', 'TsukiiYamero', 'TsukiYamero'],
   colorScheme: 'dark',
   generator: 'Next.js',
   robots: 'index, follow',
