@@ -33,7 +33,7 @@ export const Hero = () => {
 
             </div>
 
-            <div className='relative z-[5] self-center justify-self-center mt-[6rem] md:mt-[12rem]  w-[380px] h-[380px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] xl:w-[800px] xl:h-[800px]'>
+            <div className='relative z-[5] self-center justify-self-center mt-[6rem] md:mt-[12rem] w-[378px] h-[260px] md:w-[600px] md:h-[400px] lg:w-[700px] lg:h-[700px] xl:w-[800px] xl:h-[400px]'>
                 <Suspense fallback={<p className='text-white text-[1.5rem]'>Loading...</p>}>
                     <HeroAnimation />
                 </Suspense>
