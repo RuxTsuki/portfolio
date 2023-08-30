@@ -21,10 +21,10 @@ export const Hero = () => {
 
                 <div>
                     <Text type='SuperTitle'>
-                        Hola, soy <span className='text-[#ff4ecd]'>Diego Bello</span> 👋
+                        Hola, soy <span className='text-[#ff4ecd] whitespace-nowrap'>Diego Bello👋</span>
                     </Text>
 
-                    <p className={`text-[#dfd9ff] lg:text-[1.5rem] font-medium md:text-[26px] text-[1.125rem] lg:leading-[40px] mt-6`}>
+                    <p className={`text-[#dfd9ff] lg:text-[1.5rem] font-medium xs:text-[1.125rem] md:text-[26px] text-[1rem] lg:leading-[40px] mt-6`}>
                         Front-end Developer,
                         <br className='sm:block hidden' />
                         Amo crear interfaces & aplicaciones web impactantes.
@@ -33,13 +33,14 @@ export const Hero = () => {
 
             </div>
 
-            <div className='relative z-[5] self-center justify-self-center mt-[10rem] md:mt-[20rem] lg:mt-[16rem] w-[378px] h-[260px] md:w-[600px] md:h-[350px] lg:w-[700px] lg:h-[400px] xl:w-[800px] xl:h-[400px]'>
+            <div className='relative z-[5] self-center justify-self-center mt-[10rem] md:mt-[13rem] lg:mt-[16rem] 
+            w-[282px] h-[160px]  xs:w-[378px] xs:h-[261px] md:w-[602px] md:h-[350px] lg:w-[600px] lg:h-[350px] xl:w-[800px] xl:h-[401px]'>
                 <Suspense fallback={<p className='text-white text-[1.5rem]'>Loading...</p>}>
                     <HeroAnimation />
                 </Suspense>
             </div>
 
-            <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+            <div className='absolute bottom-[5.5rem] gotodown lg:bottom-[3.2rem] w-full flex justify-center items-center'>
                 <Link href="#about">
                     <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
                         <motion.div animate={{

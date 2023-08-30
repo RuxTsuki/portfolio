@@ -10,7 +10,7 @@ import { idAbout } from '@/constants';
 const About = () => {
   return (
     <>
-      <motion.div className='pt-32'>
+      <motion.div className='pt-[2.8rem]'>
         <p className={`${styles.sectionSubText}`}>Introduccion</p>
         <h2 className={`${styles.sectionHeadText}`}>Acerca de mi 🙌</h2>
       </motion.div>
