@@ -15,10 +15,9 @@ export const SplashScreen = () => {
                 setIsFinishSplash(true);
                 document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
             }, 400);
-
         }
-        animate();
 
+        animate();
     }, []);
 
     return (
