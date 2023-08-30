@@ -6,10 +6,10 @@ interface Props {
     className?: string;
 }
 
-export const Text = ({ children, className, type }: Props) => {
+export const Text = ({ children, className = '', type }: Props) => {
     switch (type) {
         case 'SuperTitle':
-            return <h1 className={`${className} font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2`}>
+            return <h1 className={`${className} font-black text-white lg:text-[70px] xl:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2`}>
                 {children}
             </h1>
         case 'SubSuperTitle':
